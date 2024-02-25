@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    Hey
-    <script></script>
-</body>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gallery</h1>
+      <input
+        type="file"
+        id="fileInput"
+        multiple
+        directory
+        accept=".jpg,.jpeg,.png,.svg"
+      />
+      <button id="play">Play</button>
+    </header>
+    <div class="gallery"></div>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <img id="modalImg" src="/icons/gmode.svg" alt="" />
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>

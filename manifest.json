@@ -17,5 +17,5 @@
     "default_icon": "icons/gmode.svg"
   },
 
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "activeTab"]
 }
